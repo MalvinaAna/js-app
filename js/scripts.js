@@ -20,3 +20,12 @@ let pokemonList= [
     types: ['normal' , 'fairy']
     }
 ]; 
+
+for (let i = 0; i < pokemonList.length; i++) {
+    if (pokemonList[i].heigth > 0.5) {
+        document.write('<br>' + pokemonList[i].name + ' (heigth:' + pokemonList[i].heigth + ') - Wow, that\’s big!' + '</br>');
+    } else {
+        document.write('<br>' + pokemonList[i].name + ' (heigth:' + pokemonList[i].heigth + ')' + '</br>');
+    }
+}
+
