@@ -1,5 +1,5 @@
+// IIFE (Immediately Invoked Function Expression) function
 let pokemonRepository=(function(){
-
     let pokemonList= [
         {
             name: "Pikachu",
@@ -31,19 +31,36 @@ let pokemonRepository=(function(){
         return pokemonList.push(pokemon);
     }
 
+    function showDetails(pokemon) {
+        console.log(pokemon);
+    }
+
+    function addListItem(pokemon) {
+        let pokemonList = document.querySelector('.pokemon-list');
+        let listItem = document.createElement('li');
+        let button = document.createElement('button');
+        button.innerText = pokemon.name;
+        button.classList.add('button-class');
+        listItem.appendChild(button);
+        pokemonList.appendChild(listItem);
+        //added an event listener
+        button.addEventListener('click', function () {
+            showDetails(pokemon);
+        });
+    }
+
+
     return {
         getAll: getAll,
-        add: add
+        add: add,
+        addListItem: addListItem
     }
 })()
 
 pokemonRepository.getAll().forEach(function(pokemon){
-    if (pokemon.heigth > 0.5) {
-        document.write('<p>' + pokemon.name + ' (heigth:' + pokemon.heigth + ') - Wow, that\’s big!' + '</p>');
-    } else {  
-        document.write('<p>' + pokemon.name + ' ' + pokemon.heigth + '</p>');
-    }
+    pokemonRepository.addListItem(pokemon);
 });
+
 
 
 
