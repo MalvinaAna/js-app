@@ -1,51 +1,78 @@
-body {
-    text-align: center;
-    width: auto;
+body {  
+  text-align: center;
+  width: auto;
+}
+
+ul {
+  list-style: none;
 }
 
 .page-container {
   margin-top: 60px;
-  background-color: #FDFDFE; 
+  background-color: white; 
 }
 
 .navigation-bar {
-  background-color: white;
+  background-color: whitesmoke;
   color:black;
   font-size: 14 px;
   font-weight: 700;
 }
 
 .button-class {
-    background-color: white;
-    color:black;
-    border: 2px solid red;
-    border-radius: 4px;
-    padding: 16px 32px;
-    margin:6px;
-    width: 15em;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 14 px;
-    font-weight: 700;
-    transition-duration: 1s;
+  background-color: white;
+  color:black;
+  border: 4px solid red;
+  border-radius: 8px;
+  padding: 16px 32px;
+  margin:6px;
+  width: 80%;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 700;
+  transition-duration: 1s;
+  box-shadow: 0 8px 16px 0 rgba(248, 72, 72, 0.2);
 }
 
 .button-class:hover,
-.button.class:focus,
-.button.class:active {
-    cursor: pointer;
-    background-color: red;
-    color:white;
-    border: 2px solid red;
+.button-class:focus,
+.button-class:active {
+  cursor: pointer;
+  background-color: red;
+  color:white;
+  border: 4px solid red;
+  box-shadow: 0 8px 16px 0 rgba(248, 72, 72, 0.2);
+}
+
+.search-button {
+  background-color: white;
+  color:black;
+  border: 4px solid red;
+  border-radius: 8px;
+  text-align: center;
+  text-decoration: none;
+  transition-duration: 1s;
+  box-shadow: 0 8px 16px 0 rgba(248, 72, 72, 0.2);
+}
+
+.search-button:hover,
+.search-button:focus,
+.search-button:active {
+  cursor: pointer;
+  background-color: red;
+  color:white;
+  border: 4px solid red;
+  box-shadow: 0 8px 16px 0 rgba(248, 72, 72, 0.2);
 }
 
 .pokemon-modal {
   margin: auto;
   display: inline-block;
   box-sizing: border-box;
-  border-radius: 4px;
-  border: 2px solid red;
+  border-radius: 8px;
+  border: 4px solid red;
   background: white;
   padding: 15px;
   width: 100%;
@@ -59,8 +86,8 @@ body {
   float: right;    
   background-color: white;
   color: black;
-  border-radius: 4px;
-  border: 1px solid red;
+  border-radius: 8px;
+  border: 2px solid red;
   text-align: center;
   text-decoration: none;
   font-size: 14 px;
@@ -73,7 +100,8 @@ body {
 .modal-close:active {
   cursor: pointer;
   background-color: red;
-  color:white
+  color:white;
+  box-shadow: 0 8px 16px 0 rgba(248, 72, 72, 0.2);
 }
   
 .modal h1 {
