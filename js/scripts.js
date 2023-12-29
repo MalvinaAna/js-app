@@ -27,6 +27,9 @@ let pokemonRepository=(function(){
         button.setAttribute('data-target', '#pokemonModal');
         listItem.appendChild(button);
         listItem.classList.add('list-group-item-light');
+        listItem.classList.add('col-12');
+        listItem.classList.add('col-sm-6');
+        listItem.classList.add('col-md-4');
         pokemonList.appendChild(listItem);
         //added an event listener
         button.addEventListener('click', function () {
